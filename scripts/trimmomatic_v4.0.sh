@@ -13,12 +13,7 @@
 ILLUMINA_RAWDATA=/data/gent/vo/001/gvo00142/vsc43352/cpgenomes/intro-cpgenomes/OX0001 #take notice of the file extension names different options '.fq.gz' '.fastq.gz'
 ILLUMINA_ADAPTERS=/data/gent/vo/001/gvo00142/vsc43352/cpgenomes/intro-cpgenomes/adapters
 
-# output directories qc
-#TRIMMOMATIC_OUT=/user/gent/433/vsc43352/scratch_vo/genomes/WMKJ_SRX7128323/rawdata/out_trimmomatic_$(date +"%Y-%m-%d_%H-%M-%S")
-#TRIMMOMATIC_OUT=/<path to your>/out_trimmomatic
-
-
-# meke trimmed data directory
+# make trimmed data output directory
 mkdir $ILLUMINA_RAWDATA/trimmed-data
 
 # Create sampleslist to itterate, serves as input for itteration process in trimmomatic
