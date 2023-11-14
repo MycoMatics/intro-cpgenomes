@@ -1,4 +1,5 @@
-#!/usr/bin/bash                                # Line 1 is a she-bang that indicates that this is a Bash script.
+#!/usr/bin/bash                                
+# Line 1 is a she-bang that indicates that this is a Bash script.
 
 #PBS -N fastqc.$PBS_JOBID                 #  Line 3-7 inform the scheduler about the resources required by this job:
 #PBS -l nodes=1:ppn=all                                    # singe node (nodes=1) all core (ppn=all)
