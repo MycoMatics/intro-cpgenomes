@@ -1,5 +1,5 @@
-
 #!/bin/bash
+
 #PBS -N trimmomatic.$PBS_JOBID
 #PBS -l nodes=1:ppn=8
 #PBS -o $PBS_JOBID.trimmomatic.stdout						
