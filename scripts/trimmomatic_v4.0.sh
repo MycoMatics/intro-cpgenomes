@@ -33,7 +33,11 @@ while read p
 do 
 
 ### ACTIVATE FOR SE data
-#java -jar $EBROOTTRIMMOMATIC/trimmomatic-0.39.jar SE -phred33 -trimlog $TRIMMOMATIC_OUT/$p".log" $ILLUMINA_RAWDATA/$p"_R1.fastq.gz" $TRIMMOMATIC_OUT/$p"_R1_trimmed.fastq" ILLUMINACLIP:$ILLUMINA_ADAPERS/alladapterstrimmomatic.fa:2:30:10:1:TRUE SLIDINGWINDOW:5:20
+#java -jar $EBROOTTRIMMOMATIC/trimmomatic-0.39.jar SE -phred33 \
+#-trimlog $TRIMMOMATIC_OUT/$p".log" \
+#$ILLUMINA_RAWDATA/$p".fastq.gz" \
+#$ILLUMINA_RAWDATA/trimmed-data/$p"-trimmed.fastq" \
+#ILLUMINACLIP:$ILLUMINA_ADAPERS/alladapterstrimmomatic.fa:2:30:10:1:TRUE SLIDINGWINDOW:5:20
 
 ### ACTIVATE FOR PE data
 java -jar $EBROOTTRIMMOMATIC/trimmomatic-0.39.jar PE -phred33 -trimlog $ILLUMINA_RAWDATA/trimmed-data/$p".log" \
